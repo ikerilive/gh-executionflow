@@ -18,13 +18,21 @@ To simulate a real-world DevOps pipeline suitable for production-grade environme
 
 ## 🔄 Workflow Overview
 Push to main
+
 ├── Lint Job
+
 ├── Test Job
+
 │ └── Uploads test report on failure
+
 ├── Build Job (needs: test)
+
 │ └── Uploads /dist as artifact
+
 ├── Deploy Job (needs: build)
+
 │ └── Downloads /dist and deploys
+
 └── Report Job (needs: [lint, deploy], runs only on failure)
 
 
