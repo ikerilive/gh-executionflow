@@ -63,9 +63,13 @@ Your `.github/workflows/reusable.yml` can be imported in other workflows via `us
 ## 📁 File Structure
 .github/workflows/
 │
+
 ├── website-deployment.yml # Main full pipeline
+
 ├── use-reuse.yml # Workflow that calls reusable deploy
+
 ├── reusable.yml # Reusable deploy logic
+
 └── matrix.yml # Cross-version build workflow
 
 
@@ -77,5 +81,3 @@ _Not connected to a cloud provider yet, but can easily integrate with:_
 - Render.com  
 - AWS S3 + CloudFront  
 - Firebase Hosting
-
----
